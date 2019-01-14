@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Photography</title>
+
+	<link rel="stylesheet" href="projectstyle.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+	.slider1 {
+		width: 62%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slider1 img {
+		width: 100%;
+	}
+
+	.slider1 div {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.slider2 {
+		width: 62%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slider2 img {
+		width: 100%;
+	}
+
+	.slider2 div {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.slider3 {
+		width: 62%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slider3 img {
+		width: 100%;
+	}
+
+	.slider3 div {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+</style>
+
+</head>
+<body>
+		<div id="sidebar">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gdesign.html">Graphic Design</a></li>
+			<li><a href="ux.html">UX Design</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+
+		</ul>
+	</div>
+
+	<div id="outercontainer">
+		<div class="slider1">
+			<div> <img src="4.jpg"/></div>
+			<div> <img src="19.jpg"/></div>
+			<div> <img src="31.jpg"/></div>
+			<!--<div> <img src="17.jpg"/></div>
+			<div> <img src="13.jpg"/></div>-->
+	
+	
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+
+
+	<script>
+
+
+	document.querySelector(".toggle-btn").onclick = function (){
+ 		document.querySelector("#sidebar").classList.toggle('active');
+
+ 	}
+
+ 	$(document).ready(function () {
+ 		$('.slider1').slick({
+ 			//setting-name: setting-value
+ 			dots: true,
+ 			autoplay: true,
+ 			slidesToShow: 1
+ 		});
+
+ 		$('.slider2').slick({
+ 			//setting-name: setting-value
+ 			dots: true,
+ 			autoplay: true,
+ 			slidesToShow: 1
+ 		});
+
+
+ 		$('.slider3').slick({
+ 			//setting-name: setting-value
+ 			dots: true,
+ 			autoplay: true,
+ 			slidesToShow: 1
+ 		});
+
+ 	});
+
+
+
+	</script>
+
+
+</body>
+</html>

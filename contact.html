@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Contact Me</title>
+	<link rel="stylesheet" href="projectstyle.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<style>
+	.container {
+	width: 55%;
+	background-color: #FBFAF7;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-top: 10%;
+	padding: 20px;
+	font-family: Arial;
+}
+
+form {
+
+font-family: Arial;
+font-size: 14px;
+width: 800px;
+margin: o px auto;
+border-radius: 10px;
+padding: 20px;
+}
+
+.row {
+margin-bottom: 10px;
+}
+	</style>
+</head>
+<body>
+
+	<div id="sidebar">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gdesign.html">Graphic Design</a></li>
+			<li><a href="ux.html">UX Design</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+
+		</ul>
+	</div>
+</br>
+
+<div class="container">
+
+
+
+
+	<h1>Connect with Susan!</h1>
+	<div class="row">
+	<label>
+	Name</label>:<input type="text" name="name"value="" id="nameInput"/>
+	<div class="row">
+	<br/>
+	<label>
+	Email</label>: <input type"password" name="age" value="" id="emailInput"/>
+	<div class="row">
+	<br/>
+	<label>Gender</label>: <input type="radio" name="gender" value="" /> Male 
+	<input type="radio" name="gender" value="" /> Female
+	<div class="row">
+	<br/>
+
+	<label>Where are you from?</label>:
+	<select name="">
+	<option value="">Asia</option>
+	<option value="">North America</option>
+	<option value="">South America</option>
+	<option value="">Australia</option>
+	<option value="">Europe</option>
+	<option value="">Africa</option>
+	<option value="">Other</option>
+
+	</select>
+
+	<div class="row">
+
+
+	<br/>
+
+	<label>What kind of design you are interested in?</label>: 
+	<input type="checkbox" name="" value=""/> Graphics 
+	<input type="checkbox" name="" value=""/> Book and Magazine 
+	<input type="checkbox" name="" value=""/> Product 
+	<input type="checkbox" name="" value=""/> UI/UX 
+	<div class="row">
+
+
+
+
+	<br/>
+
+	<label>Comments</label>:
+	</br>
+	<textarea name="comments" id="comment">
+	</textarea>
+	<div class="row">
+	<input type="reset" name=""value="Reset" />
+	<button id="submit">
+	Submit
+	</button>
+
+	
+
+</div>
+
+
+	<script>
+		
+
+	 	document.querySelector(".toggle-btn").onclick = function (){
+ 			document.querySelector("#sidebar").classList.toggle('active');
+
+ 		}
+
+ 		document.querySelector("#submit").onclick = function () {
+ 			console.log("form is submitted");
+ 			var comment = document.querySelector("#comment").value;
+ 			var b = document.querySelector("#nameInput").value;
+ 			var c = document.querySelector("#emailInput").value;
+
+ 			console.log(comment);
+
+ 			if ( comment.trim().length <1 || b.trim().length<1 || c.trim().length <1) {
+
+ 				alert("Please fill out the entire form!");
+ 			}
+
+ 			else {
+ 				alert("Thank you for submitting! I will respond to you soon.");
+
+ 			}
+ 		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF=8">
+	<title>Susan Zheng</title>
+	<script src="https://use.fontawesome.com/fa9332307a.js"></script>
+	<script src="pace.min.js"></script>
+	<link rel="stylesheet" href="projectstyle.css">
+<link rel="icon" href="favicon.png">
+<!--
+<style>
+	.popup {
+		position: absolute;
+		width: 100%;
+		margin: auto;
+	}
+
+	.popupHide {
+		display: none;
+	}
+
+	.mainpageHide {
+		display: none;
+	}
+
+	.mainpageShow {
+		display: block;
+	}
+
+
+/*
+.home-btn{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+*/
+
+
+#sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #151719;
+	font-style: Futura;
+	left: -200px;
+	margin-top: 0%;
+	transition: all 500ms linear;
+}
+
+.hide {
+	display: none;
+}
+
+#sidebar.active {
+	left: 0px;
+}
+
+#sidebar ul li {
+	color: white;
+	list-style: none;
+	padding: 15px 10px;
+	font-family: "Arial";
+}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 220px;
+	top: 0px;
+	margin-top: 0%;
+}
+
+#sidebar .toggle-btn span {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #151719;
+	margin: 4px 0px;
+	color: white;
+
+}
+
+
+
+#intro{
+
+ 	 font-family: "Courier";
+ 	 font-size: 20px;
+ 	 /*margin: 10px 0 0 10px; left up down right*/
+ 	 margin-top: 25%;
+  	margin-left: 250px;
+  	margin-right: auto;
+  	white-space: nowrap;
+  	overflow: hidden;
+	width: 45em;
+  	animation: type 4s steps(60, end);
+	}
+
+	@keyframes type{
+  		from { width: 0; }
+	}
+
+</style>
+-->
+</head>
+
+<body>
+
+
+
+
+	<div class="popup">
+
+
+	<img src="hello.gif"/>
+
+	</div>
+
+	<!--
+	<a href="index2.html" class="home-btn"><i id="home" class="fa fa-home"  aria-hidden="true"></i> </a>
+	-->
+	<div class="hide" id="sidebar">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gdesign.html">Graphic Design</a></li>
+			<li><a href="ux.html">UX Design</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+
+		</ul>
+	</div>
+
+	<div id="intro" class="mainpageHide" >
+		<span style="margin-top:25%";>I am Susan Zheng, a designer and web developer with a business background. </span>
+	</div>
+
+
+
+	<script>
+
+		setTimeout(hidePopup, 1500);
+
+		function hidePopup () {
+
+			document.querySelector(".popup").className =
+			" popupHide";
+
+			document.querySelector(".mainpageHide").className = "mainpageShow";
+
+			document.querySelector("#sidebar").className = "show";
+		}
+
+
+ 		document.querySelector(".toggle-btn").onclick = function (){
+ 			document.querySelector("#sidebar").classList.toggle('active');
+
+ 		}
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

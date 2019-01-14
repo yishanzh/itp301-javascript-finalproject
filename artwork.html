@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Artwork</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="projectstyle.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<style type="text/css">
+	#outercontainer {
+		width: 90%;
+		margin: auto;
+	}
+	#main {
+		margin: auto;
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding-top: 2%;
+	}
+	#main img {
+		width: 23%;
+	}
+	#thumbnails {
+		width: 100%;
+		margin: auto;
+		float: left;
+		padding: 0 16%;
+	}
+	#thumbnails img {
+		width: 7%;
+		padding: 2% 2% 2% 2%;
+	}
+
+</style>
+</head>
+<body>
+ 	<div  id="sidebar">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gdesign.html">Graphic Design</a></li>
+			<li><a href="ux.html">UX Design</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+
+		</ul>
+	</div>
+
+	<div id="outercontainer">
+
+
+<div id="main">
+	<img src="Ceramics1.jpg" alt="main image">
+</div>
+<br style="clear:both;">
+<div id="thumbnails">
+	<img class="thumb1" src="Ceramics1.jpg" >
+	<img class="thumb2" src="Ceramics2.jpg" >
+	<img class="thumb3" src="Ceramics3.jpg" >
+	<img class="thumb4" src="Ceramics4.jpg" >
+	<img class="thumb5" src="Ceramics5.jpg" >
+	<img class="thumb6" src="Ceramics6.jpg" >
+</div>
+
+
+</div>
+
+
+		<script>
+
+	 document.querySelector(".toggle-btn").onclick = function (){
+ 		document.querySelector("#sidebar").classList.toggle('active');
+
+ 		}
+
+ 			$(document).ready(function() {
+		$(".thumb1").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics1.jpg');
+		});
+		$(".thumb2").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics2.jpg');
+		});
+		$(".thumb3").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics3.jpg');
+		});
+		$(".thumb4").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics4.jpg');
+		});
+		$(".thumb5").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics5.jpg');
+		});
+		$(".thumb6").mouseover(function() {
+			$('#main img').attr("src", 'Ceramics6.jpg');
+		});
+
+	});
+
+	</script>
+</body>
+</html>
